@@ -3,8 +3,9 @@ $font-text: 'Amarante', sans-serif;
 $font-header: 'Montserrat', sans-serif;
 $color1: #ffffff;
 $color2: #2c2c54;
+$color3: #fed136;
 $color-link: #3498db;
-$background-header: url('https://savitarium.com/wp-content/uploads/2021/11/SAVITARIUM-Szeptucha-Jak-Cie-co-meczy-i-spac-niepodobna-19.11.2021.webp');
+$background-header: url('../images/background-image.png');
 $transition: all 1s;
 /*Global*/
 *, *::before, *::after {
@@ -32,9 +33,16 @@ h2 {
   font-family: $font-text;
   padding: 10px 0 10px 10px;
 }
+h3 {
+  font-size: 16px;
+  font-family: $font-header;
+  font-weight: bold;
+}
 p {
   padding: 0 10px;
   margin: 0;
+  font-family: $font-text;
+  font-weight: 300;
 }
 section {
   padding: 96px 0;
@@ -46,19 +54,18 @@ section {
 }
 .btn {
   display: inline-block;
-  min-width: 160px;
+  min-width: 240px;
+  min-height: 60px;
   padding: 16px;
   border-radius: 5px;
-  font-family: $font-text;
-  font-size: 16px;
+  font-family: $font-header;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border-width: 2px;
-  border-style: solid;
   background-size: 300%;
   transition: $transition;
-  background: $color2;
+  background: $color3;
   color: $color1;
 }
 .btn:hover {
@@ -69,20 +76,19 @@ section {
 /* Header */
 header {
   background: $background-header;
+  background-size: cover;
+  background-position: bottom;
+}
+.header {
+  background: rgba(0,0,0,0.5);
+}
+header:after {
+  background: #000;
 }
 .splash {
   color: $color1;
-  min-height: 90vh;
+  min-height: 700px;
   display: flex;
-  i {
-    font-size: 30px;
-    background: $color1;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    color: $color2;
-    border-radius: 50%;
-  }
 }
 .splash-inner {
   margin: auto;
@@ -94,7 +100,7 @@ header {
   }
   h2 {
     font-family: $font-header;
-    font-size: 55px;
+    font-size: 60px;
   }
 }
 .page-title {
@@ -115,6 +121,7 @@ header {
 
 /*Navigation*/
 .logo {
+  margin: 10px 0 0 0;
   flex: 0 0 25%;
 }
 .menu {
@@ -133,18 +140,59 @@ header {
   }
   li {
     display: inline-block;
-    margin: 0 36px 0 0;
+    margin: 0 28px 0 0;
     position: relative;
   }
   a {
     text-decoration: none;
+    font-family: $font-header;
     color: $color1;
     &:hover {
-      color: $color-link;
+      color: $color3;
     }
   }
   .container {
     display: flex;
     justify-content: space-between;
+  }
+}
+/* Section Services */
+.services {
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+  }
+  i {
+    font-size: 30px;
+    background: $color1;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: $color2;
+    border-radius: 50%;
+    text-align: center;
+    border: 3px solid $color3;
+    color: $color3;
+    margin: 0 0 20px 0;
+  }
+  .container-wrapper {
+    padding: 80px 0 0 0;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .container-wrapper-column {
+      align-items: center;
+      flex: 0 0 33.333%;
+      position: relative;
+      text-align: center;
+    }
   }
 }
