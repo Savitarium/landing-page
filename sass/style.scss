@@ -37,6 +37,7 @@ h3 {
   font-size: 16px;
   font-family: $font-header;
   font-weight: bold;
+  margin: 0;
 }
 p {
   padding: 0 10px;
@@ -46,6 +47,17 @@ p {
 }
 section {
   padding: 96px 0;
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+  }
 }
 .container {
   max-width: 1140px;
@@ -72,7 +84,19 @@ section {
   color: $color2;
   background: $color1;
 }
-
+.container-wrapper {
+  padding: 80px 0 0 0;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .container-wrapper-column {
+    align-items: center;
+    flex: 0 0 33.333%;
+    position: relative;
+    text-align: center;
+  }
+}
 /* Header */
 header {
   background: $background-header;
@@ -130,9 +154,6 @@ header:after {
 .navigation {
   padding: 12px 0;
   flex: 0 0 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   ul {
     padding: 0;
     margin: 0;
@@ -158,17 +179,6 @@ header:after {
 }
 /* Section Services */
 .services {
-  h1 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  h2 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
-  }
   i {
     font-size: 30px;
     background: $color1;
@@ -182,17 +192,29 @@ header:after {
     color: $color3;
     margin: 0 0 20px 0;
   }
+}
+
+/* Our Portfolio */
+.our-portfolio {
+  background: #f7f7f7;
+  .container {
+    text-align: center;
+  }
   .container-wrapper {
     padding: 80px 0 0 0;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     .container-wrapper-column {
       align-items: center;
-      flex: 0 0 33.333%;
       position: relative;
       text-align: center;
+      flex: none;
+      background: #fff;
+      .img-description {
+        padding: 15px 0;
+      }
     }
   }
 }
