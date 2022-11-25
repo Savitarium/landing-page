@@ -44,18 +44,58 @@ section {
   padding: 0 20px;
   margin: 0 auto;
 }
-
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: $font-text;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-size: 300%;
+  transition: $transition;
+  background: $color2;
+  color: $color1;
+}
+.btn:hover {
+  color: $color2;
+  background: $color1;
+}
 
 /* Header */
+header {
+  background: $background-header;
+}
 .splash {
   color: $color1;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
-  background: $background-header;
+  i {
+    font-size: 30px;
+    background: $color1;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: $color2;
+    border-radius: 50%;
+  }
 }
 .splash-inner {
   margin: auto;
   max-width: 70%;
+  text-align: center;
+  h1 {
+    font-family: $font-text;
+    font-size: 50px;
+  }
+  h2 {
+    font-family: $font-header;
+    font-size: 55px;
+  }
 }
 .page-title {
   margin: 0;
