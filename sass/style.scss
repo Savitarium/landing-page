@@ -4,6 +4,7 @@ $font-header: 'Montserrat', sans-serif;
 $color1: #ffffff;
 $color2: #2c2c54;
 $color3: #fed136;
+$color4: #000;
 $color-link: #3498db;
 $background-header: url('../images/background-image.png');
 $transition: all 1s;
@@ -216,5 +217,60 @@ header:after {
         padding: 15px 0;
       }
     }
+  }
+}
+
+/* Footer */
+.footer {
+  color: $color2;
+  min-height: 156px;
+  padding: 48px 0;
+}
+.footer-inner {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    font-size: 20px;
+    color: $color1;
+    background: $color4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+  }
+  .fa-facebook-f {
+    padding: 0 14px;
+  }
+  .fa-twitter {
+    padding: 0 10px;
+  }
+  .fa-pinterest-p {
+    padding: 0 12px;
+  }
+  .fa-google-plus-g {
+    padding: 0 8px;
+  }
+  ul {
+    display: flex;
+    padding: 0;
+
+  }
+  li {
+    font-size: 0;
+    padding: 0 10px;
+    transition: $transition;
+  }
+  li:hover {
+    transform: scale(1.2);
+  }
+  .copyright {
+    flex: 0 0 40%;
+  }
+  .social {
+    flex: 0 0 60%;
   }
 }
