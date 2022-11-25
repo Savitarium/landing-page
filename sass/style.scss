@@ -1,0 +1,110 @@
+/* Variables */
+$font-text: 'Amarante', sans-serif;
+$font-header: 'Montserrat', sans-serif;
+$color1: #ffffff;
+$color2: #2c2c54;
+$color-link: #3498db;
+$background-header: url('https://savitarium.com/wp-content/uploads/2021/11/SAVITARIUM-Szeptucha-Jak-Cie-co-meczy-i-spac-niepodobna-19.11.2021.webp');
+$transition: all 1s;
+/*Global*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.row::before,
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-text;
+  color: $color2;
+}
+h1 {
+  font-size: 35px;
+  font-family: $font-header;
+}
+h2 {
+  font-size: 20px;
+  font-family: $font-text;
+  padding: 10px 0 10px 10px;
+}
+p {
+  padding: 0 10px;
+  margin: 0;
+}
+section {
+  padding: 96px 0;
+}
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+
+/* Header */
+.splash {
+  color: $color1;
+  min-height: 100vh;
+  display: flex;
+  background: $background-header;
+}
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+}
+.page-title {
+  margin: 0;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: $font-header;
+  span {
+    font-family: $font-text;
+  }
+}
+.page-subtitle {
+  margin: 24px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*Navigation*/
+.logo {
+  flex: 0 0 25%;
+}
+.menu {
+  align-self: center;
+}
+.navigation {
+  padding: 12px 0;
+  flex: 0 0 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+  }
+  li {
+    display: inline-block;
+    margin: 0 36px 0 0;
+    position: relative;
+  }
+  a {
+    text-decoration: none;
+    color: $color1;
+    &:hover {
+      color: $color-link;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

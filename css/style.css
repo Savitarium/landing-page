@@ -1,0 +1,117 @@
+/* Variables */
+/*Global*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.row::before,
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Amarante", sans-serif;
+  color: #2c2c54;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Amarante", sans-serif;
+  padding: 10px 0 10px 10px;
+}
+
+p {
+  padding: 0 10px;
+  margin: 0;
+}
+
+section {
+  padding: 96px 0;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* Header */
+.splash {
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  background: url("https://savitarium.com/wp-content/uploads/2021/11/SAVITARIUM-Szeptucha-Jak-Cie-co-meczy-i-spac-niepodobna-19.11.2021.webp");
+}
+
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
+}
+.page-title span {
+  font-family: "Amarante", sans-serif;
+}
+
+.page-subtitle {
+  margin: 24px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*Navigation*/
+.logo {
+  flex: 0 0 25%;
+}
+
+.menu {
+  align-self: center;
+}
+
+.navigation {
+  padding: 12px 0;
+  flex: 0 0 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.navigation li {
+  display: inline-block;
+  margin: 0 36px 0 0;
+  position: relative;
+}
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navigation a:hover {
+  color: #3498db;
+}
+.navigation .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBWYXJpYWJsZXMgKi9cbi8qR2xvYmFsKi9cbiosICo6OmJlZm9yZSwgKjo6YWZ0ZXIge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xufVxuXG4ucm93OjpiZWZvcmUsXG4ucm93OjphZnRlciB7XG4gIGNsZWFyOiBib3RoO1xuICBjb250ZW50OiBcIlwiO1xuICBkaXNwbGF5OiB0YWJsZTtcbn1cblxuYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBsaW5lLWhlaWdodDogMS43O1xuICBmb250LWZhbWlseTogXCJBbWFyYW50ZVwiLCBzYW5zLXNlcmlmO1xuICBjb2xvcjogIzJjMmM1NDtcbn1cblxuaDEge1xuICBmb250LXNpemU6IDM1cHg7XG4gIGZvbnQtZmFtaWx5OiBcIk1vbnRzZXJyYXRcIiwgc2Fucy1zZXJpZjtcbn1cblxuaDIge1xuICBmb250LXNpemU6IDIwcHg7XG4gIGZvbnQtZmFtaWx5OiBcIkFtYXJhbnRlXCIsIHNhbnMtc2VyaWY7XG4gIHBhZGRpbmc6IDEwcHggMCAxMHB4IDEwcHg7XG59XG5cbnAge1xuICBwYWRkaW5nOiAwIDEwcHg7XG4gIG1hcmdpbjogMDtcbn1cblxuc2VjdGlvbiB7XG4gIHBhZGRpbmc6IDk2cHggMDtcbn1cblxuLmNvbnRhaW5lciB7XG4gIG1heC13aWR0aDogMTE0MHB4O1xuICBwYWRkaW5nOiAwIDIwcHg7XG4gIG1hcmdpbjogMCBhdXRvO1xufVxuXG4vKiBIZWFkZXIgKi9cbi5zcGxhc2gge1xuICBjb2xvcjogI2ZmZmZmZjtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGJhY2tncm91bmQ6IHVybChcImh0dHBzOi8vc2F2aXRhcml1bS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjEvMTEvU0FWSVRBUklVTS1TemVwdHVjaGEtSmFrLUNpZS1jby1tZWN6eS1pLXNwYWMtbmllcG9kb2JuYS0xOS4xMS4yMDIxLndlYnBcIik7XG59XG5cbi5zcGxhc2gtaW5uZXIge1xuICBtYXJnaW46IGF1dG87XG4gIG1heC13aWR0aDogNzAlO1xufVxuXG4ucGFnZS10aXRsZSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1zaXplOiA3MnB4O1xuICBmb250LXdlaWdodDogNzAwO1xuICBsaW5lLWhlaWdodDogMS4yO1xuICBmb250LWZhbWlseTogXCJNb250c2VycmF0XCIsIHNhbnMtc2VyaWY7XG59XG4ucGFnZS10aXRsZSBzcGFuIHtcbiAgZm9udC1mYW1pbHk6IFwiQW1hcmFudGVcIiwgc2Fucy1zZXJpZjtcbn1cblxuLnBhZ2Utc3VidGl0bGUge1xuICBtYXJnaW46IDI0cHggMDtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4vKk5hdmlnYXRpb24qL1xuLmxvZ28ge1xuICBmbGV4OiAwIDAgMjUlO1xufVxuXG4ubWVudSB7XG4gIGFsaWduLXNlbGY6IGNlbnRlcjtcbn1cblxuLm5hdmlnYXRpb24ge1xuICBwYWRkaW5nOiAxMnB4IDA7XG4gIGZsZXg6IDAgMCAxMDAlO1xuICBwb3NpdGlvbjogLXdlYmtpdC1zdGlja3k7XG4gIHBvc2l0aW9uOiBzdGlja3k7XG4gIHRvcDogMDtcbn1cbi5uYXZpZ2F0aW9uIHVsIHtcbiAgcGFkZGluZzogMDtcbiAgbWFyZ2luOiAwO1xuICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG59XG4ubmF2aWdhdGlvbiBsaSB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luOiAwIDM2cHggMCAwO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG4ubmF2aWdhdGlvbiBhIHtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBjb2xvcjogI2ZmZmZmZjtcbn1cbi5uYXZpZ2F0aW9uIGE6aG92ZXIge1xuICBjb2xvcjogIzM0OThkYjtcbn1cbi5uYXZpZ2F0aW9uIC5jb250YWluZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG59XG5cbiJdfQ== */
