@@ -274,3 +274,32 @@ header:after {
     flex: 0 0 60%;
   }
 }
+/* Media */
+@media (max-width: 767px) {
+  .splash-inner {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-family: $font-header;
+      font-size: 40px;
+    }
+  }
+  .navigation .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .navigation ul {
+    text-align: center;
+  }
+  .container-wrapper .container-wrapper-column {
+    flex: 0 0 100%;
+    padding: 20px 0 0 0;
+    i:first-of-type {
+      padding: 0;
+    }
+  }
+  .our-portfolio .container-wrapper .container-wrapper-column {
+    flex: 0 0 100%;
+  }
+}
